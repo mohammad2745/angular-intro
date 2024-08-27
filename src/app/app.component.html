@@ -5,3 +5,18 @@
 
 <h3> {{ message }}</h3>
 <h3> {{ fromChild }}</h3>
+
+<br>
+
+<!-- property binding -->
+<img [src]="imgUrl" alt="">
+
+<!-- class binding  -->
+ <p [class.text-red]="bool">Class binding example</p>
+
+ <!-- event binding -->
+  <button (click)="clickMe()">Click Event</button>
+
+  <br>
+  <!-- event filtering -->
+  <input type="text" (keyup.enter)="onKeyup()">
