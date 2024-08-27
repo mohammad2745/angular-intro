@@ -1,4 +1,7 @@
 <h1>hello world</h1>
 
 <app-navbar></app-navbar>
-<app-post [fromParent]="parentMessage"></app-post>
+<app-post [fromParent]="parentMessage" (messageEvent)="receiveMessage($event)"></app-post>
+
+<h3> {{ message }}</h3>
+<h3> {{ fromChild }}</h3>
