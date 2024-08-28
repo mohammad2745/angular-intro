@@ -13,6 +13,7 @@ export class AppComponent implements AfterViewInit {
   message: string = '';
   fromChild: string = '';
   bool: boolean = true;
+  username: string = '';
 
   imgUrl: string = 'https://cdn.pixabay.com/photo/2024/04/04/03/08/ai-generated-8674235_1280.png'
 
@@ -32,6 +33,6 @@ export class AppComponent implements AfterViewInit {
   }
 
   onKeyup() {
-    console.log('event filtering!!!')
+    console.log('event filtering!!!', this.username);
   }
 }

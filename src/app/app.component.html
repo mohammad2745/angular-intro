@@ -18,5 +18,10 @@
   <button (click)="clickMe()">Click Event</button>
 
   <br>
+
   <!-- event filtering -->
-  <input type="text" (keyup.enter)="onKeyup()">
+  <!-- <input type="text" (keyup.enter)="onKeyup(username.value)" #username> -->
+
+  <!-- Two way data binding -->
+   <br><br>
+   <input type="text" [(ngModel)]="username" (keyup.enter)="onKeyup()">
